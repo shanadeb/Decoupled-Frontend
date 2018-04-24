@@ -1,3 +1,17 @@
 .center{
-  vertical-align: middle;
+  margin:0 auto;
+}
+
+.fade-in{
+animation: fadeIn 4s;
+}
+
+@keyframes fadeIn {
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+
 }
