@@ -9,10 +9,13 @@ animation: fadeIn 4s;
 }
 
 .slide-out{
-  animation: slideOut 6s;
+  animation: slideOut 5s;
   text-align:center;
 }
 
+a{
+  text-decoration: none;
+}
 
 @keyframes fadeIn {
   from{opacity:0;}
@@ -22,4 +25,66 @@ animation: fadeIn 4s;
 @keyframes slideOut {
   from{transform: translate(0px, -30px);}
   to{text-align: center;}
+}
+
+#modal{
+  display:flex;
+  background-color:rgba(0,21,34,0.5);
+  width:100%;
+  position:fixed;
+  z-index:1;
+  height:100vh;
+  left:0;
+  top:0;
+  justify-content: center;
+  align-items:center;
+}
+
+.modal-content{
+  border:.5px solid rgba(0,112,185,0.4);
+  border-radius:10px;
+  box-shadow: 2px 2px 1px rgba(0,112,185,0.4);
+  text-align: center;
+  background-color: #fff;
+  animation: fadeIn 1s;
+}
+
+.modal-logo{
+  width:50%;
+  border-radius: 100px;
+  padding-top:5px;
+}
+
+.modal-body, .modal-header, .modal-footer{
+  padding:0;
+}
+
+
+.close-btn{
+  color:#ccc;
+  float:right;
+  font-size:30px;
+  padding-right:5px;
+}
+
+.close-btn:hover{
+  color:#000;
+  cursor:pointer;
+}
+.submit-btn {
+  width:4.5em;
+  height:3em;
+  border:0;
+  margin:10px;
+  border-radius: 10px;
+}
+
+.submit-btn:hover{
+  background-color: #0070B9;
+  color:#fff;
+  cursor:pointer;
+}
+
+.form-input{
+  margin:5px;
 }

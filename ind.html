@@ -4,15 +4,35 @@
     <link rel="stylesheet" type="text/css" href="ind.css">
     <title>Decoupled Frontend</title>
     <div class="fade-in">
-      <img src="imgs/img.png" class= "center">
+      <a href=#><img src="imgs/img.png" class= "center" alt="Anime Styled Drawing"></a>
     </div>
   </head>
 
   <body>
-    <div class="slide-out">
-      <h1>HOME</h2>
-      <!-- <form class="modal">
-      </form> -->
+    <a href=#><h1 class="slide-out">HOME</h2><a>
+    <div id="modal">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <span class="close-btn">&times;</span>
+          <img class="modal-logo" src="imgs/img.png" alt="Anime Styled Drawing">
+          <h2>Login</h2>
+        </div>
+
+      <div class="modal-body">
+      <form>
+        <label></label>
+        <input class="form-input" type="text" placeholder="Username"></input><br>
+        <input class="form-input" type="password" placeholder="Password"></input><br>
+        <input class="form-input" type="checkbox" check="checked">Remember Me</input>
+      </form>
+    </div>
+
+    <div class="modal-footer">
+      <input type="submit" value= "LOGIN" class="submit-btn" alt="Login">
+    </div>
+
+    </div>
     </div>
   </body>
 </html>
