@@ -1,17 +1,25 @@
 .center{
-  margin:0 auto;
+  display:block;
+  margin-left: auto;
+  margin-right:auto;
 }
 
 .fade-in{
 animation: fadeIn 4s;
 }
 
-@keyframes fadeIn {
-  from{
-    opacity:0;
-  }
-  to{
-    opacity:1;
-  }
+.slide-out{
+  animation: slideOut 6s;
+  text-align:center;
+}
 
+
+@keyframes fadeIn {
+  from{opacity:0;}
+  to{opacity:1;}
+}
+
+@keyframes slideOut {
+  from{transform: translate(0px, -30px);}
+  to{text-align: center;}
 }
